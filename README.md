@@ -1,1 +1,2 @@
-# Finance-Tracker
+# Finance-Tracker-v1.0
+Changes will reflect here soon...
