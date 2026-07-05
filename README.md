@@ -1,4 +1,6 @@
 # Finance-Tracker-v1.0
-Changes will reflect here soon.
+
+Development has started 
+1. Designing part is under development.
 
 ## Author: https://github.com/Shreyansh-dev180
