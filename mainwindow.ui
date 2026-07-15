@@ -13,6 +13,28 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #1E1E1E;
+}
+
+QPushButton {
+    background-color: #3C3C3C;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 11pt;
+}
+
+QPushButton:hover {
+    background-color: #4A90E2;
+}
+
+QPushButton:pressed {
+    background-color: #2D6FC2;
+}</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
@@ -51,8 +73,266 @@
       </item>
       <item>
        <widget class="QStackedWidget" name="stackedWidget">
-        <widget class="QWidget" name="page_3"/>
-        <widget class="QWidget" name="page_4"/>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="expensePage">
+         <widget class="QLabel" name="Expense_Reason">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>50</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Expense Reason  :</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Date">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>100</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Date                      : </string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Amount">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>150</y>
+            <width>101</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+    background-color: #2F3136;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 11pt;
+    font-weight: 600;
+
+    padding: 8px;
+}
+
+QPushButton:hover
+{
+    background-color: #4A90E2;
+}
+
+QPushButton:pressed
+{
+    background-color: #2D6FC2;
+}</string>
+          </property>
+          <property name="text">
+           <string>Amount               :</string>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Expense_rbar">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>40</y>
+            <width>401</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Date_bar">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>100</y>
+            <width>401</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QLineEdit" name="Amount_bar">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>160</y>
+            <width>401</width>
+            <height>41</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="dashboardPage">
+         <widget class="QLabel" name="label">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>170</y>
+            <width>431</width>
+            <height>121</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>70</pointsize>
+            <italic>true</italic>
+            <bold>true</bold>
+            <strikeout>false</strikeout>
+            <stylestrategy>PreferAntialias</stylestrategy>
+           </font>
+          </property>
+          <property name="mouseTracking">
+           <bool>false</bool>
+          </property>
+          <property name="acceptDrops">
+           <bool>false</bool>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LayoutDirection::LeftToRight</enum>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton
+{
+    background-color: #2F3136;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 11pt;
+    font-weight: 600;
+
+    padding: 8px;
+}
+
+QPushButton:hover
+{
+    background-color: #4A90E2;
+}
+
+QPushButton:pressed
+{
+    background-color: #2D6FC2;
+}</string>
+          </property>
+          <property name="text">
+           <string>Welcome</string>
+          </property>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="graphPage"/>
+        <widget class="QWidget" name="settingsPage">
+         <widget class="QTextBrowser" name="textBrowser">
+          <property name="geometry">
+           <rect>
+            <x>200</x>
+            <y>100</y>
+            <width>401</width>
+            <height>161</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; color:#ff0000;&quot;&gt;WARNING&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:10pt; font-weight:700; color:#ff0000;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;      Your all the data will be deleted&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;    It can't be restored&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;		&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_5">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>270</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QMainWindow {
+    background-color: #1E1E1E;
+}
+
+QPushButton {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 11pt;
+}
+
+QPushButton:hover {
+    background-color: green;
+}
+
+QPushButton:pressed {
+    background-color: blue;
+}</string>
+          </property>
+          <property name="text">
+           <string>Cancel</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_6">
+          <property name="geometry">
+           <rect>
+            <x>530</x>
+            <y>270</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QMainWindow {
+    background-color: #1E1E1E;
+}
+
+QPushButton {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 11pt;
+}
+
+QPushButton:hover {
+    background-color: red;
+}
+
+QPushButton:pressed {
+    background-color: green;
+}</string>
+          </property>
+          <property name="text">
+           <string>Confirm</string>
+          </property>
+         </widget>
+        </widget>
        </widget>
       </item>
      </layout>
