@@ -31,11 +31,11 @@ void MainWindow::on_pushButton_clicked()
 
 void MainWindow::on_pushButton_7_clicked()
 {
-    if(ui->Expense_Reason().isEmpty() || ui->Amount_bar().isEmpty()){
+    if(ui->Expense_rbar->text().isEmpty() || ui->Amount_bar->text().isEmpty()){
         return;
     }
 
-    current_expense.reason = ui->Expense_Reason->text();
+    current_expense.reason = ui->Expense_rbar->text();
     current_expense.date = ui->Date_bar->text();
     current_expense.amount = ui->Amount_bar->text().toInt();
 

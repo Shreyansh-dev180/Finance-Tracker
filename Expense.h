@@ -8,6 +8,6 @@ struct Expense{
     QString date;
     int amount;
 
-}
+};
 
 #endif // EXPENSE_H
