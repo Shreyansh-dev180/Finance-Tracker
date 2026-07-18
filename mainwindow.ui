@@ -14,9 +14,7 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QMainWindow {
-    background-color: #1E1E1E;
-}
+   <string notr="true">background-color: White;
 
 QPushButton {
     background-color: #3C3C3C;
@@ -74,7 +72,7 @@ QPushButton:pressed {
       <item>
        <widget class="QStackedWidget" name="stackedWidget">
         <property name="currentIndex">
-         <number>1</number>
+         <number>0</number>
         </property>
         <widget class="QWidget" name="expensePage">
          <widget class="QLabel" name="Expense_Reason">
@@ -169,6 +167,68 @@ QPushButton:pressed
             <width>401</width>
             <height>41</height>
            </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_7">
+          <property name="geometry">
+           <rect>
+            <x>510</x>
+            <y>220</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #28A745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #34C759;
+}
+
+QPushButton:pressed {
+    background-color: #1E7E34;
+}</string>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="pushButton_8">
+          <property name="geometry">
+           <rect>
+            <x>420</x>
+            <y>220</y>
+            <width>75</width>
+            <height>24</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: #DC3545;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 6px 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: #FF4D5A;
+}
+
+QPushButton:pressed {
+    background-color: #B02A37;
+}</string>
+          </property>
+          <property name="text">
+           <string>Cancel</string>
           </property>
          </widget>
         </widget>
@@ -272,25 +332,21 @@ li.checked::marker { content: &quot;\2612&quot;; }
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">QMainWindow {
-    background-color: #1E1E1E;
-}
-
-QPushButton {
-    background-color: green;
+           <string notr="true">QPushButton {
+    background-color: #28A745;
     color: white;
     border: none;
     border-radius: 6px;
-    padding: 6px;
-    font-size: 11pt;
+    padding: 6px 14px;
+    font-weight: bold;
 }
 
 QPushButton:hover {
-    background-color: green;
+    background-color: #34C759;
 }
 
 QPushButton:pressed {
-    background-color: blue;
+    background-color: #1E7E34;
 }</string>
           </property>
           <property name="text">
@@ -307,25 +363,21 @@ QPushButton:pressed {
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">QMainWindow {
-    background-color: #1E1E1E;
-}
-
-QPushButton {
-    background-color: red;
+           <string notr="true">QPushButton {
+    background-color: #DC3545;
     color: white;
     border: none;
     border-radius: 6px;
-    padding: 6px;
-    font-size: 11pt;
+    padding: 6px 14px;
+    font-weight: bold;
 }
 
 QPushButton:hover {
-    background-color: red;
+    background-color: #FF4D5A;
 }
 
 QPushButton:pressed {
-    background-color: green;
+    background-color: #B02A37;
 }</string>
           </property>
           <property name="text">
