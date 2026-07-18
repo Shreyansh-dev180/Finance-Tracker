@@ -42,3 +42,10 @@ void MainWindow::on_pushButton_7_clicked()
     History.push_back(current_expense);
 }
 
+
+void MainWindow::on_pushButton_8_clicked()
+{
+    ui->Expense_rbar->clear();
+    ui->Amount_bar->clear();
+}
+
