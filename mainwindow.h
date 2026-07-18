@@ -26,6 +26,10 @@ private slots:
 
     void on_pushButton_7_clicked();
 
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_4_clicked();
+
 private:
     Expense current_expense;
     std::vector<Expense> History;

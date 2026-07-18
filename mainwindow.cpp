@@ -16,20 +16,20 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_pushButton_3_clicked()
+void MainWindow::on_pushButton_3_clicked() //home button
 {
     ui->stackedWidget->setCurrentIndex(1);
 }
 
 
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_pushButton_clicked() //Add expense button
 {
     ui->stackedWidget->setCurrentIndex(0);
     ui->Date_bar->setText(QDate::currentDate().toString("dd-MM-yyyy"));
 }
 
 
-void MainWindow::on_pushButton_7_clicked()
+void MainWindow::on_pushButton_7_clicked() //add button
 {
     if(ui->Expense_rbar->text().isEmpty() || ui->Amount_bar->text().isEmpty()){
         return;
@@ -43,9 +43,27 @@ void MainWindow::on_pushButton_7_clicked()
 }
 
 
-void MainWindow::on_pushButton_8_clicked()
+void MainWindow::on_pushButton_8_clicked() //cancel button
 {
     ui->Expense_rbar->clear();
     ui->Amount_bar->clear();
+}
+
+
+void MainWindow::on_pushButton_4_clicked() //delete button
+{
+    ui->stackedWidget->setCurrentIndex(3);
+}
+
+
+void MainWindow::on_pushButton_6_clicked() //confirm button in warning
+{
+    History.clear();
+}
+
+
+void MainWindow::on_pushButton_5_clicked() //delete clearing data cancel button then send to homepage
+{
+    ui->stackedWidget->setCurrentIndex(1);
 }
 
