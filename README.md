@@ -2,6 +2,7 @@
 
 Development has started 
 1. Designing part is completed.
-2. version 1.0.0 soon
+2. Working on Backend part...
+3. Just few weeks away
 
 ## Author: https://github.com/Shreyansh-dev180
