@@ -91,3 +91,4 @@ void MainWindow::on_pushButton_5_clicked() //(delete,clearing data) cancel butto
     ui->stackedWidget->setCurrentIndex(1);
 }
 
+//add a indicator for pressing cancel button in expense page also and then graph page work start;
