@@ -72,7 +72,7 @@ QPushButton:pressed {
       <item>
        <widget class="QStackedWidget" name="stackedWidget">
         <property name="currentIndex">
-         <number>0</number>
+         <number>3</number>
         </property>
         <widget class="QWidget" name="expensePage">
          <widget class="QLabel" name="Expense_Reason">
@@ -231,6 +231,19 @@ QPushButton:pressed {
            <string>Cancel</string>
           </property>
          </widget>
+         <widget class="QLabel" name="Done_label_ep">
+          <property name="geometry">
+           <rect>
+            <x>520</x>
+            <y>250</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Done !</string>
+          </property>
+         </widget>
         </widget>
         <widget class="QWidget" name="dashboardPage">
          <widget class="QLabel" name="label">
@@ -382,6 +395,19 @@ QPushButton:pressed {
           </property>
           <property name="text">
            <string>Confirm</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="Done_label_setting_page">
+          <property name="geometry">
+           <rect>
+            <x>540</x>
+            <y>300</y>
+            <width>71</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Done!</string>
           </property>
          </widget>
         </widget>
